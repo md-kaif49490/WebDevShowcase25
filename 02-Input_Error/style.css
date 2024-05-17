@@ -1,0 +1,37 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html,body{
+height: 100%;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgb(219, 219, 219);
+position: relative;
+}
+
+
+#error{
+    position: absolute;
+    top: 43%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+}
+input{
+    padding: 0.7vw 2vw;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid black;
+}
+
+button{
+    padding: 0.7vw 2vw;
+    border-radius: 10px;
+    outline: none;
+    background-color: black;
+    color: #fff;
+    margin-left: 1vw;
+}
