@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.bg {
+background: url('./image.jpg');
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+z-index: -1;
+filter: blur(70px) ;
+}
+
+.loading-text{
+    font-size: 50px;
+    color: #fff;
+}
