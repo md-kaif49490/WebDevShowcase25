@@ -1,0 +1,122 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html,body{
+height: 100%;
+width: 100%;
+}
+
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+}
+
+.split{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.split.left{
+    left: 0;
+    background: url('https://t4.ftcdn.net/jpg/03/46/67/47/240_F_346674749_OqTumQ09V9bqjPTnqYOgHS71E6uSau7o.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.split.left::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(87,84,236,0.7);
+}
+
+.split.right::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(43,43,43,0.8);
+}
+.split.right{
+    right: 0;
+    background: url('https://media.gettyimages.com/id/1895745085/photo/ankara-turkiye-in-this-photo-illustration-xbox-logo-is-being-displayed-on-a-mobile-phone.jpg?s=612x612&w=0&k=20&c=bO1HcuekG6T7byk9D2wVWDOiKNFGg1cUqSnoMEl3bpY=');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1{
+    font-size: 4rem;
+    color: #fff;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+.btn{
+    position: absolute;
+    left:50%;
+    top:40%;
+    transform: translateX(-50% );
+    text-decoration: none;
+    color: white;
+    border: #fff solid 0.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 15rem;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.split.left .btn:hover{
+    background-color: rgba(87,84,236,1);
+    border-color: rgba(87,84,236,1) ;
+}
+
+.split.right .btn:hover{
+    background-color: rgb(74, 122, 95);
+    border-color:  rgb(74, 122, 95);
+}
+
+.split.right, .split.left, .split.right::before, .split.left::before{
+    transition: all 1000ms ease-in-out;
+}
+
+.hover-left .left{
+    width: 60%;
+}
+
+.hover-left .right{
+    width: 40%;
+}
+
+.hover-right .right{
+    width: 60%;
+}
+
+.hover-right .left{
+    width: 40%;
+}
+
+@media (max-width:800px) {
+    h1{
+        font-size: 1.8rem;
+    }
+
+    .btn{
+        padding: 1rem;
+        width: 11rem;
+    }
+}
