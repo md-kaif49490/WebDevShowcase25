@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: gilroy;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+#main {
+    margin-top: 5%;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: relative;
+}
+
+.elem {
+    height: 100px;
+    width: 100%;
+    /* background-color: violet; */
+    border-bottom: 2px solid #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.elem h1{
+font-size: 5vw;
+position: relative;
+z-index: 99;
+mix-blend-mode: difference;
+}
+
+.elem img{
+    height: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: all linear 0.3s;
+}
