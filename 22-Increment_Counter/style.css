@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #8e44ad;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+.couter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 60px;
+}
+
+.icon {
+    font-size: 5vw;
+padding-left: 4vw;
+}
+
+.counter {
+    font-size: 60px;
+    margin-top: 10px;
+    margin-left: 2vw;
+    text-align: center;
+}
+span{
+    text-align: center;
+    padding-left: 3vw;
+}
